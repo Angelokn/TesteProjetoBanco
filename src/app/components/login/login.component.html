@@ -1,0 +1,78 @@
+<div id="campo-cpf">
+    <h3>Informe o CPF do futuro cooperado (a)</h3>
+    <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente. Digite apenas os números (sem pontos ou traços).</p>
+
+    <form id="form-cpf">
+        <legend for="cpf">CPF</legend>
+        <input
+            name="cpf"
+            id="cpf"
+            placeholder="000.000.000-00"
+            [(ngModel)]="usuario.cpf"
+            required
+            mask="000.000.000-00"
+        >
+
+        <button [disabled]="botao" type="submit" id="botao-cpf" (click)="mostrarDados()">
+            Consultar por CPF
+        </button>
+    </form>
+</div>
+
+<div *ngIf="chave">
+
+    <div id="infos"  *ngFor='let usuario of usuarios.slice(usuario,1)'>
+        <div class="campos">
+            <div class="titulo">
+                <h4>Situação cadastral do CPF</h4>
+                <p>Consulta na Receita Federal</p>
+            </div>
+            <div class="dados">
+                <img src="" alt="">
+                <p>Nome</p>
+                <h5>{{usuario.nome}}</h5>
+            </div>
+            <div class="dados">
+                <img src="" alt="">
+                <p>Situação do CPF</p>
+                <h5>Regular</h5>
+            </div>
+        </div>
+
+        <div class="campos">
+            <div class="titulo">
+                <h4>Conta aplicação</h4>
+                <p>Cooperativa Viacredi</p>
+            </div>
+            <div class="dados">
+                <img src="" alt="">
+                <p>Número da conta</p>
+                <h5>{{usuario.contaAplicacao}}</h5>
+            </div>
+            <div class="duplicar-conta">
+                <h5>Duplicar conta</h5>
+            </div>
+        </div>
+
+        <div class="campos">
+            <div class="titulo">
+                <h4>Conta corrente</h4>
+                <p>Cooperativa Viacredi</p>
+            </div>
+            <div class="dados">
+                <img src="" alt="">
+                <p>Número da conta</p>
+                <h5>{{usuario.contaCorrente}}</h5>
+            </div>
+            <div class="duplicar-conta">
+                <h5>Duplicar conta</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="botoes-footer">
+        <button id="botao-voltar" (click)=voltarHome()>Iniciar nova admissão</button>
+        <button class="botao-dicas">Dicas para admissão</button>
+    </div>
+
+</div>

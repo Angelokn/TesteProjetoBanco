@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+#header-left p {
+    margin-top: -2%;
+}
+
+#header-right {
+    float: right;
+    margin: 2rem;
+}
+
+#viacredi {
+    padding: 0.5rem;
+}
+
+#nav {
+    display: flex;
+    margin-left: 0%;
+}
+
+#etapas {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 20rem;
+}

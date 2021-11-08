@@ -1,0 +1,44 @@
+#campo-cpf {
+    width: 45%;
+    margin: 0.5rem;
+}
+
+#campo-cpf p {
+    margin-top: -1%;
+}
+
+#form-cpf {
+    padding-top: 0.5rem;
+}
+
+#form-cpf input{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+#infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 50%;
+    margin: 2rem;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 350px;
+    margin: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.botoes-footer {
+    display: flex;
+    justify-content: left;
+    margin: 0.5rem;
+}
+
+#botao-voltar {
+    margin-right: 0.5rem;
+}

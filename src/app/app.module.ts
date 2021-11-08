@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
+import { BancoService } from './services/banco.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    LoginComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    NgxMaskModule.forRoot()
+  ],
+  providers: [HttpClientModule, BancoService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

@@ -1,0 +1,39 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Joao",
+            "cpf": "12345678910",
+            "contaAplicacao": 1234567,
+            "contaCorrente": 7654321
+        },
+        {
+            "id": 2,
+            "nome": "Angelo",
+            "cpf": "01987654321",
+            "contaAplicacao": 5555555,
+            "contaCorrente": 4444444
+        },
+        {
+            "id": 3,
+            "nome": "Ana",
+            "cpf": "99999999999",
+            "contaAplicacao": 1010101,
+            "contaCorrente": 9898989
+        },
+        {
+            "id": 4,
+            "nome": "Julia",
+            "cpf": "88888888888",
+            "contaAplicacao": 8888888,
+            "contaCorrente": 8080808 
+        },
+        {
+            "id": 5,
+            "nome": "Pedro",
+            "cpf": "77777777777",
+            "contaAplicacao": 2525252,
+            "contaCorrente": 5252525 
+        }
+    ]
+}
