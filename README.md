@@ -1,3 +1,12 @@
+Ao abrir o projeto no VSCode, entrar no terminal e seguir:
+
+- acessar a pasta app (cd Projeto-Banco\src\app)
+- inicializar a API (json-server usuarios.json)
+- abrir outro terminal e startar a aplicação (npm start)
+- CPFs usados: 12345678910, 01987654321, 99999999999, 88888888888, 77777777777
+
+
+
 # ProjetoBanco
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
